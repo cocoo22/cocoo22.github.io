@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quienes-somos</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <!-- Sección encabezado -->
+    <header class="header">
+        <a href="Index.html" class="logo"><img src="imagen/logo.png"></a>
+        <h1>CERATIPOP</h1>
+        <nav class="navbar">
+            <span class="icon" onclick="toggleMenu()">&#9776;</span>
+            <ul class="menu" id="menu">
+                <li><a href="Index.html">INICIO</a></li>
+                <li><a href="Quienes somos.html">Quienes somos</a></li>
+                <li><a href="productos.html">Catálogo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Sección de contenido principal-->
+    <main>
+        <!-- Sección de la empresa -->
+        <section id="empresa" class="columnas">
+            <div class="izquierda">
+                <img src="imagenes/imagen1.jpg" alt="imagen 1" width="300" height="300">
+            </div>
+            <div class="derecha">
+                <h2>¿Quienes somos?</h2>
+                <p>Somos una empresa apacionada por la música del rock.</p>    
+            </div>
+        </section>
+
+        <!-- Sección de Promociones -->
+        <section id="promocion">
+            <h2>CERATIPOP</h2>
+            <div class="catalogo">
+                <!-- promocion 1 -->
+                <div class="producto">
+                    <div class="producto-info">
+                        <h2>Misión</h2>
+                        <p>Buscamos llevar la musica a nuevos oyentes por medio de los vilinos más populares y buscados por la gente.</p>
+                    </div>
+                </div>
+                <!-- promocion 2 -->
+                <div class="producto">
+                    <div class="producto-info">
+                        <h2>Visión</h2>
+                        <p>Llegar a ser la mejor empresa a nivel mundial de vender los mejores vilinos más populares.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sección de Servicios y Precios -->
+        <section id="servicios" class="columnas">
+            <div class="izquierda">
+                <h2>Valores de la empresa</h2>
+                <ul>
+                    <li>Respeto a cualquier genero musical.</li>
+                    <li>No descriminar o hacer de menos a otros por sus gustos.</li>
+                    <li>Tener empatía o entender a las demas personas con absoluta paciencia.</li>
+                    <!-- Agregar más servicios según sea necesario -->
+                </ul>
+            </div>
+            <div class="derecha">
+            </div>
+        </section>
+
+        <!-- Sección de Marcas -->
+        <section id="marcas">
+            <h2>Para más información</h2>
+            <div class="brands">
+                <p>al num 913 124 0629 </p>
+                <p>al num 913 116 6337</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Sección de Pie de pagina -->
+    <footer>
+        <p>&copy; 2025 Pagina que muestra la historia, todos los derechos reservados.</p>
+        <div class="redes-sociales">
+            <a href="#" target="_blank">Facebook</a> |
+            <a href="#" target="_blank">Twitter</a> |
+            <a href="#" target="_blank">Instagram</a>
+        </div>
+        <p>Contacto: http://data.sedema.cdmx.gob.mx/museodehistorianatural/index.php/ubicacion/ubicacion-costos-mhnca </p>
+    </footer>
+
+    <!-- script Codigo de JavaScript -->
+    <script>
+        // Función para mostrar u ocultar el menú en móviles
+        function toggleMenu() {
+          const menu = document.getElementById("menu");
+          menu.classList.toggle("responsive");
+        }
+      </script>
+</body>
+</html>
+

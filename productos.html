@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles.css">
+    <title>Catálogo de Productos</title>
+
+</head>
+<body>
+    <!-- Sección encabezado -->
+    <header class="header">
+        <a href="Index.html" class="logo"><img src="imagen/logo.png"></a>
+        <h1>CERATIPOP</h1>
+        <nav class="navbar">
+            <span class="icon" onclick="toggleMenu()">&#9776;</span>
+            <ul class="menu" id="menu">
+                <li><a href="Index.html">INICIO</a></li>
+                <li><a href="Quienes somos.html">Quienes somos</a></li>
+                <li><a href="productos.html">Catálogo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de contenido principal-->
+    <main>
+        <h1>Catálogo de Productos</h1>
+        <div class="catalogo">
+            <!-- Producto 1 -->
+            <div class="producto">
+                <img src="Catalago/imagen9.jpg" alt="imagen 9">
+                <div class="producto-info">
+                    <h2>primer articulo</h2>
+                    <p>Relato de una historia mal contada.</p>
+                    <p class="precio">$20.00</p>
+                </div>
+            </div>
+    
+            <!-- Producto 2 -->
+            <div class="producto">
+                <img src="Catalago/imagen10.jpg" alt="imagen 10">
+                <div class="producto-info">
+                    <h2>Segundo articulo</h2>
+                    <p>Descubre toda tu mente.</p>
+                    <p class="precio">$25.00</p>
+                </div>
+            </div>
+    
+            <!-- Producto 3 -->
+            <div class="producto">
+                <img src="Catalago/imagen11.jpg" alt="imagen 11">
+                <div class="producto-info">
+                    <h2>Tercer articulo</h2>
+                    <p>La tierra inavitable.</p>
+                    <p class="precio">$30.00</p>
+                </div>
+            </div>
+    
+            <!-- Producto 4 -->
+            <div class="producto">
+                <img src="Catalago/imagen12.jpg" alt="imagen 12">
+                <div class="producto-info">
+                    <h2>Cuarto articulo</h2>
+                    <p>Zonas de guerra.</p>
+                    <p class="precio">$15.00</p>
+                </div>
+            </div>
+            <!-- Producto 5 -->
+            <div class="producto">
+                <img src="Catalago/imagen13.jpg" alt="imagen 13">
+                <div class="producto-info">
+                    <h2>Quinto articulo</h2>
+                    <p>Un nuevo regimen.</p>
+                    <p class="precio">$15.00</p>
+                </div>
+            </div>
+            <!-- Producto 6 -->
+            <div class="producto">
+                <img src="Catalago/imagen14.jpg" alt="imagen 14">
+                <div class="producto-info">
+                    <h2>Sexto articulo</h2>
+                    <p>La sangre se confunde con tinta.</p>
+                    <p class="precio">$15.00</p>
+                </div>
+            </div>
+            <!-- Producto 7 -->
+            <div class="producto">
+                <img src="Catalago/imagen15.jpg" alt="imagen 15">
+                <div class="producto-info">
+                    <h2>Septimo articulo</h2>
+                    <p>Descripción breve del producto 4.</p>
+                    <p class="precio">$15.00</p>
+                </div>
+            </div>
+            <!-- Producto 8 -->
+            <div class="producto">
+                <img src="Catalago/imagen16.jpg" alt="imagen 16">
+                <div class="producto-info">
+                    <h2>Octavo articulo</h2>
+                    <p>El inicio de la catastrofe.</p>
+                    <p class="precio">$15.00</p>
+                </div>
+            </div>
+        </div>
+    </main>
+         <video width="300" height="300" controls>
+        <source src="Video/video.mp4" type="video/mp4">
+        Tu navegador no soporta el formato de video.
+    </video>
+    
+    <audio controls>
+        <source src="audio/audio.mp3"
+            type="audio/mp3">
+        Tu navegador no admite el elemento audio.
+    </audio>
+    <!-- Sección de Pie de pagina -->
+    <footer>
+        <p>&copy; 2025 Pagina que muestra la historia. Todos los derechos reservados.</p>
+        <div class="redes-sociales">
+            <a href="#" target="_blank">Facebook</a> |
+            <a href="#" target="_blank">Twitter</a> |
+            <a href="#" target="_blank">Instagram</a>
+        </div>
+        <p>Contacto: rd2005682.gmail</p>
+    </footer>
+
+    <!-- script Codigo de JavaScript -->
+    <script>
+        // Función para mostrar u ocultar el menú en móviles
+        function toggleMenu() {
+          const menu = document.getElementById("menu");
+          menu.classList.toggle("responsive");
+        }
+    </script>
+</body>
+</html>

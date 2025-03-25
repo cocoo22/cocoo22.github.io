@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi pagina WEB</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <!-- Sección encabezado -->
+    <header class="header">
+        <a href="Index.html" class="logo"><img src="imagen/logo.png"></a>
+        <h1>CERATIPOP</h1>
+        <nav class="navbar">
+            <span class="icon" onclick="toggleMenu()">&#9776;</span>
+            <ul class="menu" id="menu">
+                <li><a href="Index.html">INICIO</a></li>
+                <li><a href="Quienes somos.html">Quienes somos</a></li>
+                <li><a href="productos.html">Catálogo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Sección de contenido principal-->
+    <main>
+        <!-- Sección de la empresa -->
+        <section id="empresa" class="columnas">
+            <div class="izquierda">
+                <img src="imagenes/imagen1.jpg" alt="imagen 1" width="300" height="300">
+            </div>
+            <div class="derecha">
+                <h2>Lo más destacado</h2>
+                <p>Nuestra linea de productos más buscados por temporada.</p>    
+            </div>
+        </section>
+
+        <!-- Sección de Promociones -->
+        <section id="promocion">
+            <h2>Lo más vendido de la temporada</h2>
+            <div class="catalogo">
+                <!-- promocion 1 -->
+                <div class="producto">
+                    <img src="imagenes/imagen2.jpg" alt="imagen 2">
+                    <div class="producto-info">
+                        <h2>Vilino de The Beatles</h2>
+                        <p>"A Hard Day's Night" (1964)</p>
+                    </div>
+                </div>
+                <!-- promocion 2 -->
+                <div class="producto">
+                    <img src="imagenes/imagen3.jpg" alt="imagen 3">
+                    <div class="producto-info">
+                        <h2>Foto de la primera guerra mundial</h2>
+                        <p>Foto que muestra los efectos de la guerra.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sección de Servicios y Precios -->
+        <section id="servicios" class="columnas">
+            <div class="izquierda">
+                <h2>Libros de la historia y precios</h2>
+                <ul>
+                    <li>Primer libro: $100</li>
+                    <li>Segundo libro: $75</li>
+                    <li>Tercer libro: $89.50</li>
+                    <!-- Agregar más servicios según sea necesario -->
+                </ul>
+            </div>
+            <div class="derecha">
+                <img src="imagenes/imagen4.jpg" alt="imagen 4">
+            </div>
+        </section>
+
+        <!-- Sección de Marcas -->
+        <section id="marcas">
+            <h2>Lo más destacado</h2>
+            <div class="brands">
+                <img src="imagenes/imagen5.jpg" alt="imagen 5">
+                <img src="imagenes/imagen6.jpg" alt="imagen 6">
+                <img src="imagenes/imagen7.jpg" alt="imagen 7">
+                <img src="imagenes/imagen8.jpg" alt="imagen 8">
+            </div>
+        </section>
+    </main>
+
+    <!-- Sección de Pie de pagina -->
+    <footer>
+        <p>&copy; 2025 Pagina que muestra la historia, todos los derechos reservados.</p>
+        <div class="redes-sociales">
+            <a href="#" target="_blank">Facebook</a> |
+            <a href="#" target="_blank">Twitter</a> |
+            <a href="#" target="_blank">Instagram</a>
+        </div>
+        <p>Contacto: http://data.sedema.cdmx.gob.mx/museodehistorianatural/index.php/ubicacion/ubicacion-costos-mhnca </p>
+    </footer>
+
+    <!-- script Codigo de JavaScript -->
+    <script>
+        // Función para mostrar u ocultar el menú en móviles
+        function toggleMenu() {
+          const menu = document.getElementById("menu");
+          menu.classList.toggle("responsive");
+        }
+      </script>
+</body>
+</html>
